@@ -30,7 +30,7 @@ using System.Text;
         {
             get
             {
-            //constr = System.Configuration.ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
+                //constr = System.Configuration.ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
                 constr = "Data Source=localhost;Initial Catalog=MyQQ;Integrated Security=True";
                 //上面这个必须添加引用System.configuartion
                 conn = new SqlConnection(constr);
