@@ -79,7 +79,8 @@ namespace MyQQ
                 }
                 DBHelper.GetExcuteNonQuery(sql);
                 this.Hide();
-                Application.Exit();
+                FrmMain frmMain = new FrmMain(cbxAccount.Text);
+                frmMain.Show();
             }
             else
             {

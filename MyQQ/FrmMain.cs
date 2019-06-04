@@ -16,5 +16,44 @@ namespace MyQQ
         {
             InitializeComponent();
         }
+        string userID;
+        public FrmMain(string account)
+        {
+            InitializeComponent();
+            this.userID = account;
+        }
+        private Point mousePoint = new Point();
+
+        private void PanelTitle_MouseMove(object sender, MouseEventArgs e)
+        {
+            base.OnMouseMove(e);
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left = Control.MousePosition.X - mousePoint.X;
+                this.Top = Control.MousePosition.Y - mousePoint.Y;
+            }
+        }
+
+        private void PanelTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            base.OnMouseDown(e);
+            this.mousePoint.X = e.X;
+            this.mousePoint.Y = e.Y;
+        }
+
+        private void BtnMin_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
