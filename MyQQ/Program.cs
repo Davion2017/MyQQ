@@ -16,7 +16,7 @@ namespace MyQQ
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmBase());
+            Application.Run(new FrmLogin());
             //Application.Run(new FrmMain());
         }
     }
