@@ -92,5 +92,15 @@ namespace MyQQ
             DT.Load(sqlData);
             dgvFriendList.DataSource = DT;
         }
+
+        private void BtnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
