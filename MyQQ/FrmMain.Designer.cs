@@ -131,6 +131,7 @@
             this.btnSearch.TabIndex = 7;
             this.btnSearch.Text = "添加好友";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
             // btnUpdate
             // 
@@ -140,6 +141,7 @@
             this.btnUpdate.TabIndex = 8;
             this.btnUpdate.Text = "修改资料";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // FrmMain
             // 
