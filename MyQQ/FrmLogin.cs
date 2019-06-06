@@ -11,6 +11,9 @@ using System.Data.SqlClient;
 
 namespace MyQQ
 {
+    /// <summary>
+    /// MyQQ登录窗体
+    /// </summary>
     public partial class FrmLogin : Form
     {
         public FrmLogin()

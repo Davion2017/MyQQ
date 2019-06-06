@@ -7,21 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace MyQQ
 {
+    /// <summary>
+    /// MyQQ登录后主页面
+    /// </summary>
     public partial class FrmMain : Form
     {
         public FrmMain()
         {
             InitializeComponent();
         }
-        string userID;
+        string account;
         public FrmMain(string account)
         {
             InitializeComponent();
-            this.userID = account;
+            this.account = account;
         }
+
+        /// <summary>
+        /// 添加自定义panel实现窗体拖动及其窗体的关闭操作
+        /// </summary>
         private Point mousePoint = new Point();
 
         private void PanelTitle_MouseMove(object sender, MouseEventArgs e)
@@ -46,14 +54,23 @@ namespace MyQQ
             WindowState = FormWindowState.Minimized;
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void BtnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        /// <summary>
+        /// 窗体加载事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmMain_Load(object sender, EventArgs e)
         {
-
+            string sql = "select * from users where account='" + this.account + "';";
+            SqlDataReader sqlData = DBHelper.GetDataReader(sql);
+            sqlData.Read();
+            this.labUserName.Text = sqlData["name"].ToString();
+            this.labSignature.Text = sqlData["signature"].ToString();
         }
     }
 }
