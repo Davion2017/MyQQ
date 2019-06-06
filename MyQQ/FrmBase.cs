@@ -16,7 +16,8 @@ namespace MyQQ
         {
             InitializeComponent();
             skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
-            skinEngine1.SkinFile = Application.StartupPath + "/office2007.ssk";
+            skinEngine1.SkinFile = Application.StartupPath.Replace("\\bin\\Debug", "") + "/Resources/office2007.ssk";
+            MessageBox.Show(Application.StartupPath.ToString().Replace("\\bin\\Debug", ""));
         }
     }
 }
