@@ -35,7 +35,11 @@
             this.picHead = new System.Windows.Forms.PictureBox();
             this.labUserName = new System.Windows.Forms.Label();
             this.labSignature = new System.Windows.Forms.Label();
+            this.dgvFriendList = new System.Windows.Forms.DataGridView();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picHead)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFriendList)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTitle
@@ -108,6 +112,35 @@
             this.labSignature.Size = new System.Drawing.Size(0, 12);
             this.labSignature.TabIndex = 5;
             // 
+            // dgvFriendList
+            // 
+            this.dgvFriendList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvFriendList.BackgroundColor = System.Drawing.Color.White;
+            this.dgvFriendList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFriendList.Location = new System.Drawing.Point(13, 127);
+            this.dgvFriendList.Name = "dgvFriendList";
+            this.dgvFriendList.RowTemplate.Height = 23;
+            this.dgvFriendList.Size = new System.Drawing.Size(255, 476);
+            this.dgvFriendList.TabIndex = 6;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(12, 619);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 7;
+            this.btnSearch.Text = "添加好友";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(193, 619);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 8;
+            this.btnUpdate.Text = "修改资料";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -115,6 +148,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(280, 645);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.dgvFriendList);
             this.Controls.Add(this.labSignature);
             this.Controls.Add(this.labUserName);
             this.Controls.Add(this.picHead);
@@ -127,6 +163,7 @@
             this.Text = "FrmMain";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picHead)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFriendList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +177,8 @@
         private System.Windows.Forms.PictureBox picHead;
         private System.Windows.Forms.Label labUserName;
         private System.Windows.Forms.Label labSignature;
+        private System.Windows.Forms.DataGridView dgvFriendList;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }

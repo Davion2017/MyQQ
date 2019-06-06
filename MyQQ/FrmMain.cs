@@ -20,7 +20,11 @@ namespace MyQQ
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// 当前用户账号
+        /// </summary>
         string account;
+
         public FrmMain(string account)
         {
             InitializeComponent();
@@ -66,11 +70,27 @@ namespace MyQQ
         /// <param name="e"></param>
         private void FrmMain_Load(object sender, EventArgs e)
         {
+            UserInfo_Init();
+            FriendList_Init();
+        }
+
+        private void UserInfo_Init()
+        {
             string sql = "select * from users where account='" + this.account + "';";
             SqlDataReader sqlData = DBHelper.GetDataReader(sql);
             sqlData.Read();
             this.labUserName.Text = sqlData["name"].ToString();
             this.labSignature.Text = sqlData["signature"].ToString();
+            this.picHead.Image = Image.FromFile("../../../img/beautify_face.png");
+        }
+
+        private void FriendList_Init()
+        {
+            string sql = "select name as '昵称', account as '账号' from users where account=(select friend from friendsList where myAccount='" + this.account + "');";
+            SqlDataReader sqlData = DBHelper.GetDataReader(sql);
+            DataTable DT = new DataTable();
+            DT.Load(sqlData);
+            dgvFriendList.DataSource = DT;
         }
     }
 }
