@@ -93,14 +93,16 @@ namespace MyQQ
             dgvFriendList.DataSource = DT;
         }
 
-        private void BtnSearch_Click(object sender, EventArgs e)
+        private void BtnUpdate_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void BtnUpdate_Click(object sender, EventArgs e)
+        private void BtnAdd_Click(object sender, EventArgs e)
         {
-
+            FrmAdd frmAdd = new FrmAdd(this.account);
+            frmAdd.Show();
+            FriendList_Init();
         }
     }
 }

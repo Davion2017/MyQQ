@@ -54,10 +54,15 @@ namespace MyQQ
         {
             string sql = "select account from users order by last_login desc;";
             SqlDataReader sqlData = DBHelper.GetDataReader(sql);
-            for (int i = 0; i <= sqlData.FieldCount; i++)
+            bool flag = false;
+            while(flag == false)
             {
-                sqlData.Read();
-                cbxAccount.Items.Add(sqlData[0]);
+                try
+                {
+                    sqlData.Read();
+                    cbxAccount.Items.Add(sqlData[0]);
+                }
+                catch { flag = true; }
             }
             cbxAccount.SelectedIndex = 0;
         }
