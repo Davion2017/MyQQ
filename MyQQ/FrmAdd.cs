@@ -44,15 +44,21 @@ namespace MyQQ
             dgvAccountList.DataSource = DT;
         }
 
-
-        private void DgvAccountList_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void DgvAccountList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             DialogResult result = MessageBox.Show("确认添加TA为好友", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == DialogResult.OK)
             {
-                MessageBox.Show("好友请求发送成功，等待对方同意");
-                
-                string sql = "INSERT into ConfirmationRequest(From_account, To_account) VALUES('" + this.account + "','" + 666666 + "');";
+                string friendAccount = dgvAccountList.CurrentRow.Cells[0].Value.ToString();
+                string sql = "INSERT into ConfirmationRequest(From_account, To_account) VALUES('" + this.account + "','" + friendAccount + "');";
+                if(DBHelper.GetExcuteNonQuery(sql) > 0)
+                {
+                    MessageBox.Show("好友请求发送成功，等待对方同意");
+                }
+                else
+                {
+                    MessageBox.Show("发送失败，请重试");
+                }
             }
         }
     }

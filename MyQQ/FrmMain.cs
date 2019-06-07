@@ -86,7 +86,7 @@ namespace MyQQ
 
         private void FriendList_Init()
         {
-            string sql = "select name as '昵称', account as '账号' from users where account=(select friend from friendsList where myAccount='" + this.account + "');";
+            string sql = "select name as '昵称', account as '账号' from users where account in (select friend from friendsList where myAccount='" + this.account + "');";
             SqlDataReader sqlData = DBHelper.GetDataReader(sql);
             DataTable DT = new DataTable();
             DT.Load(sqlData);
@@ -102,6 +102,42 @@ namespace MyQQ
         {
             FrmAdd frmAdd = new FrmAdd(this.account);
             frmAdd.Show();
+            FriendList_Init();
+        }
+
+        private void CheckResquests()
+        {
+            string sql = "SELECT name, account from users where account=(select DISTINCT From_account from ConfirmationRequest where To_account='" + this.account + "');";
+            SqlDataReader sqlData = DBHelper.GetDataReader(sql);
+            try
+            {
+                if (sqlData.HasRows)
+                {
+                    while (sqlData.Read())
+                    {
+                        string tips = sqlData["name"].ToString() + "请求加你为好友，是否同意？";
+                        DialogResult result = MessageBox.Show(tips, "提醒", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            sql = "insert into friendsList(myAccount, friend) values('" + this.account + "', '" + sqlData["account"] + "');";
+                            DBHelper.GetExcuteNonQuery(sql);
+                            sql = "insert into friendsList(myAccount, friend) values('" + sqlData["account"] + "', '" + this.account + "');";
+                            DBHelper.GetExcuteNonQuery(sql);
+                        }
+                    }
+                }
+            }
+            catch { }
+            finally
+            {
+                sql = "DELETE FROM ConfirmationRequest WHERE To_account='" + this.account + "';";
+                DBHelper.GetExcuteNonQuery(sql);
+            }
+        }
+
+        private void FrmMain_Activated(object sender, EventArgs e)
+        {
+            CheckResquests();
             FriendList_Init();
         }
     }
