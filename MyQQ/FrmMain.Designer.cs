@@ -36,7 +36,7 @@
             this.labUserName = new System.Windows.Forms.Label();
             this.labSignature = new System.Windows.Forms.Label();
             this.dgvFriendList = new System.Windows.Forms.DataGridView();
-            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picHead)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFriendList)).BeginInit();
@@ -123,14 +123,15 @@
             this.dgvFriendList.Size = new System.Drawing.Size(255, 476);
             this.dgvFriendList.TabIndex = 6;
             // 
-            // btnSearch
+            // btnAdd
             // 
-            this.btnSearch.Location = new System.Drawing.Point(12, 619);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 7;
-            this.btnSearch.Text = "添加好友";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(12, 619);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 7;
+            this.btnAdd.Text = "添加好友";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // btnUpdate
             // 
@@ -140,6 +141,7 @@
             this.btnUpdate.TabIndex = 8;
             this.btnUpdate.Text = "修改资料";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // FrmMain
             // 
@@ -149,7 +151,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(280, 645);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvFriendList);
             this.Controls.Add(this.labSignature);
             this.Controls.Add(this.labUserName);
@@ -178,7 +180,7 @@
         private System.Windows.Forms.Label labUserName;
         private System.Windows.Forms.Label labSignature;
         private System.Windows.Forms.DataGridView dgvFriendList;
-        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
     }
 }
