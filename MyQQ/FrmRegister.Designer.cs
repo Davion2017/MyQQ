@@ -29,73 +29,77 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegister));
-            this.pwd_box = new System.Windows.Forms.TextBox();
-            this.sign_box = new System.Windows.Forms.TextBox();
-            this.name_box = new System.Windows.Forms.TextBox();
-            this.birtf_datetimepick = new System.Windows.Forms.DateTimePicker();
-            this.head_Img_box = new System.Windows.Forms.PictureBox();
+            this.txtboxPwd1 = new System.Windows.Forms.TextBox();
+            this.txtboxSign = new System.Windows.Forms.TextBox();
+            this.txtboxName = new System.Windows.Forms.TextBox();
+            this.dtpBirth = new System.Windows.Forms.DateTimePicker();
+            this.imgboxHeader = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.header__btn = new System.Windows.Forms.Button();
-            this.rpwd_box = new System.Windows.Forms.TextBox();
+            this.btnHeader = new System.Windows.Forms.Button();
+            this.txtboxPwd2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.register_btn = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
-            this.name_label = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.head_Img_box)).BeginInit();
+            this.labelNameTip = new System.Windows.Forms.Label();
+            this.labelPwd1Tip = new System.Windows.Forms.Label();
+            this.labelPwd2Tip = new System.Windows.Forms.Label();
+            this.labelSignTip = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnRegister = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.imgboxHeader)).BeginInit();
             this.SuspendLayout();
             // 
-            // pwd_box
+            // txtboxPwd1
             // 
-            resources.ApplyResources(this.pwd_box, "pwd_box");
-            this.pwd_box.Name = "pwd_box";
+            this.txtboxPwd1.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.txtboxPwd1, "txtboxPwd1");
+            this.txtboxPwd1.Name = "txtboxPwd1";
+            this.txtboxPwd1.Enter += new System.EventHandler(this.Pwd_box_Enter);
             // 
-            // sign_box
+            // txtboxSign
             // 
-            resources.ApplyResources(this.sign_box, "sign_box");
-            this.sign_box.Name = "sign_box";
+            resources.ApplyResources(this.txtboxSign, "txtboxSign");
+            this.txtboxSign.Name = "txtboxSign";
             // 
-            // name_box
+            // txtboxName
             // 
-            resources.ApplyResources(this.name_box, "name_box");
-            this.name_box.Name = "name_box";
-            this.name_box.TextChanged += new System.EventHandler(this.TextBox3_TextChanged);
+            resources.ApplyResources(this.txtboxName, "txtboxName");
+            this.txtboxName.Name = "txtboxName";
             // 
-            // birtf_datetimepick
+            // dtpBirth
             // 
-            resources.ApplyResources(this.birtf_datetimepick, "birtf_datetimepick");
-            this.birtf_datetimepick.Name = "birtf_datetimepick";
+            resources.ApplyResources(this.dtpBirth, "dtpBirth");
+            this.dtpBirth.Name = "dtpBirth";
             // 
-            // head_Img_box
+            // imgboxHeader
             // 
-            resources.ApplyResources(this.head_Img_box, "head_Img_box");
-            this.head_Img_box.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.head_Img_box.Image = global::MyQQ.Properties.Resources.QQ标志;
-            this.head_Img_box.Name = "head_Img_box";
-            this.head_Img_box.TabStop = false;
+            resources.ApplyResources(this.imgboxHeader, "imgboxHeader");
+            this.imgboxHeader.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imgboxHeader.Image = global::MyQQ.Properties.Resources.QQ标志;
+            this.imgboxHeader.Name = "imgboxHeader";
+            this.imgboxHeader.TabStop = false;
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // header__btn
+            // btnHeader
             // 
-            this.header__btn.BackColor = System.Drawing.SystemColors.ControlLight;
-            resources.ApplyResources(this.header__btn, "header__btn");
-            this.header__btn.Name = "header__btn";
-            this.header__btn.UseVisualStyleBackColor = false;
-            this.header__btn.Click += new System.EventHandler(this.Button1_Click);
+            this.btnHeader.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.btnHeader, "btnHeader");
+            this.btnHeader.Name = "btnHeader";
+            this.btnHeader.UseVisualStyleBackColor = false;
+            this.btnHeader.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // rpwd_box
+            // txtboxPwd2
             // 
-            resources.ApplyResources(this.rpwd_box, "rpwd_box");
-            this.rpwd_box.Name = "rpwd_box";
+            resources.ApplyResources(this.txtboxPwd2, "txtboxPwd2");
+            this.txtboxPwd2.Name = "txtboxPwd2";
             // 
             // label1
             // 
@@ -122,21 +126,6 @@
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
             // 
-            // register_btn
-            // 
-            this.register_btn.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.register_btn.BackgroundImage = global::MyQQ.Properties.Resources.复选标记;
-            resources.ApplyResources(this.register_btn, "register_btn");
-            this.register_btn.Cursor = System.Windows.Forms.Cursors.Default;
-            this.register_btn.Name = "register_btn";
-            this.register_btn.UseVisualStyleBackColor = false;
-            this.register_btn.Click += new System.EventHandler(this.Register_btn_Click);
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
             // radioButton1
             // 
             resources.ApplyResources(this.radioButton1, "radioButton1");
@@ -156,11 +145,43 @@
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
             // 
-            // name_label
+            // labelNameTip
             // 
-            resources.ApplyResources(this.name_label, "name_label");
-            this.name_label.ForeColor = System.Drawing.Color.Red;
-            this.name_label.Name = "name_label";
+            resources.ApplyResources(this.labelNameTip, "labelNameTip");
+            this.labelNameTip.ForeColor = System.Drawing.Color.Red;
+            this.labelNameTip.Name = "labelNameTip";
+            // 
+            // labelPwd1Tip
+            // 
+            resources.ApplyResources(this.labelPwd1Tip, "labelPwd1Tip");
+            this.labelPwd1Tip.BackColor = System.Drawing.Color.Transparent;
+            this.labelPwd1Tip.ForeColor = System.Drawing.Color.Black;
+            this.labelPwd1Tip.Name = "labelPwd1Tip";
+            // 
+            // labelPwd2Tip
+            // 
+            resources.ApplyResources(this.labelPwd2Tip, "labelPwd2Tip");
+            this.labelPwd2Tip.Name = "labelPwd2Tip";
+            // 
+            // labelSignTip
+            // 
+            resources.ApplyResources(this.labelSignTip, "labelSignTip");
+            this.labelSignTip.Name = "labelSignTip";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRegister.BackgroundImage = global::MyQQ.Properties.Resources.复选标记;
+            resources.ApplyResources(this.btnRegister, "btnRegister");
+            this.btnRegister.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.Register_btn_Click);
             // 
             // FrmRegister
             // 
@@ -170,31 +191,35 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = global::MyQQ.Properties.Resources.注册背景;
-            this.Controls.Add(this.name_label);
+            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.labelSignTip);
+            this.Controls.Add(this.labelPwd2Tip);
+            this.Controls.Add(this.labelPwd1Tip);
+            this.Controls.Add(this.labelNameTip);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.register_btn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.rpwd_box);
-            this.Controls.Add(this.header__btn);
-            this.Controls.Add(this.head_Img_box);
-            this.Controls.Add(this.birtf_datetimepick);
-            this.Controls.Add(this.name_box);
-            this.Controls.Add(this.sign_box);
-            this.Controls.Add(this.pwd_box);
+            this.Controls.Add(this.txtboxPwd2);
+            this.Controls.Add(this.btnHeader);
+            this.Controls.Add(this.imgboxHeader);
+            this.Controls.Add(this.dtpBirth);
+            this.Controls.Add(this.txtboxName);
+            this.Controls.Add(this.txtboxSign);
+            this.Controls.Add(this.txtboxPwd1);
             this.Controls.Add(this.label7);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmRegister";
+            this.Activated += new System.EventHandler(this.FrmRegister_Activated);
             this.Load += new System.EventHandler(this.FrmRegister_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.head_Img_box)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgboxHeader)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,24 +227,27 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox pwd_box;
-        private System.Windows.Forms.TextBox sign_box;
-        private System.Windows.Forms.TextBox name_box;
-        private System.Windows.Forms.DateTimePicker birtf_datetimepick;
-        private System.Windows.Forms.PictureBox head_Img_box;
+        private System.Windows.Forms.TextBox txtboxPwd1;
+        private System.Windows.Forms.TextBox txtboxSign;
+        private System.Windows.Forms.TextBox txtboxName;
+        private System.Windows.Forms.DateTimePicker dtpBirth;
+        private System.Windows.Forms.PictureBox imgboxHeader;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button header__btn;
-        private System.Windows.Forms.TextBox rpwd_box;
+        private System.Windows.Forms.Button btnHeader;
+        private System.Windows.Forms.TextBox txtboxPwd2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button register_btn;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label name_label;
+        private System.Windows.Forms.Label labelNameTip;
+        private System.Windows.Forms.Label labelPwd1Tip;
+        private System.Windows.Forms.Label labelPwd2Tip;
+        private System.Windows.Forms.Label labelSignTip;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnRegister;
     }
 }

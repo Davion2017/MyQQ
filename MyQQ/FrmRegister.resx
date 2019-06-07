@@ -118,172 +118,172 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pwd_box.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtboxPwd1.Location" type="System.Drawing.Point, System.Drawing">
     <value>276, 112</value>
   </data>
-  <data name="pwd_box.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtboxPwd1.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 21</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pwd_box.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtboxPwd1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;pwd_box.Name" xml:space="preserve">
-    <value>pwd_box</value>
+  <data name="&gt;&gt;txtboxPwd1.Name" xml:space="preserve">
+    <value>txtboxPwd1</value>
   </data>
-  <data name="&gt;&gt;pwd_box.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtboxPwd1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pwd_box.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtboxPwd1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pwd_box.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="&gt;&gt;txtboxPwd1.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
-  <data name="sign_box.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 190</value>
+  <data name="txtboxSign.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 193</value>
   </data>
-  <data name="sign_box.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtboxSign.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 21</value>
   </data>
-  <data name="sign_box.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtboxSign.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;sign_box.Name" xml:space="preserve">
-    <value>sign_box</value>
+  <data name="&gt;&gt;txtboxSign.Name" xml:space="preserve">
+    <value>txtboxSign</value>
   </data>
-  <data name="&gt;&gt;sign_box.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtboxSign.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;sign_box.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtboxSign.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;sign_box.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="&gt;&gt;txtboxSign.ZOrder" xml:space="preserve">
+    <value>18</value>
   </data>
-  <data name="name_box.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtboxName.Location" type="System.Drawing.Point, System.Drawing">
     <value>276, 69</value>
   </data>
-  <data name="name_box.Multiline" type="System.Boolean, mscorlib">
+  <data name="txtboxName.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="name_box.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtboxName.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 21</value>
   </data>
-  <data name="name_box.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtboxName.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;name_box.Name" xml:space="preserve">
-    <value>name_box</value>
+  <data name="&gt;&gt;txtboxName.Name" xml:space="preserve">
+    <value>txtboxName</value>
   </data>
-  <data name="&gt;&gt;name_box.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtboxName.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;name_box.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtboxName.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;name_box.ZOrder" xml:space="preserve">
-    <value>14</value>
+  <data name="&gt;&gt;txtboxName.ZOrder" xml:space="preserve">
+    <value>17</value>
   </data>
-  <data name="birtf_datetimepick.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 251</value>
+  <data name="dtpBirth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 232</value>
   </data>
-  <data name="birtf_datetimepick.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="dtpBirth.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 21</value>
   </data>
-  <data name="birtf_datetimepick.TabIndex" type="System.Int32, mscorlib">
+  <data name="dtpBirth.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;birtf_datetimepick.Name" xml:space="preserve">
-    <value>birtf_datetimepick</value>
+  <data name="&gt;&gt;dtpBirth.Name" xml:space="preserve">
+    <value>dtpBirth</value>
   </data>
-  <data name="&gt;&gt;birtf_datetimepick.Type" xml:space="preserve">
+  <data name="&gt;&gt;dtpBirth.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;birtf_datetimepick.Parent" xml:space="preserve">
+  <data name="&gt;&gt;dtpBirth.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;birtf_datetimepick.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;dtpBirth.ZOrder" xml:space="preserve">
+    <value>16</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="head_Img_box.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="imgboxHeader.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="head_Img_box.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="imgboxHeader.Location" type="System.Drawing.Point, System.Drawing">
     <value>452, 90</value>
   </data>
-  <data name="head_Img_box.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="imgboxHeader.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 80</value>
   </data>
-  <data name="head_Img_box.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+  <data name="imgboxHeader.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="head_Img_box.TabIndex" type="System.Int32, mscorlib">
+  <data name="imgboxHeader.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="head_Img_box.WaitOnLoad" type="System.Boolean, mscorlib">
+  <data name="imgboxHeader.WaitOnLoad" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;head_Img_box.Name" xml:space="preserve">
-    <value>head_Img_box</value>
+  <data name="&gt;&gt;imgboxHeader.Name" xml:space="preserve">
+    <value>imgboxHeader</value>
   </data>
-  <data name="&gt;&gt;head_Img_box.Type" xml:space="preserve">
+  <data name="&gt;&gt;imgboxHeader.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;head_Img_box.Parent" xml:space="preserve">
+  <data name="&gt;&gt;imgboxHeader.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;head_Img_box.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;imgboxHeader.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="header__btn.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnHeader.Location" type="System.Drawing.Point, System.Drawing">
     <value>452, 190</value>
   </data>
-  <data name="header__btn.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnHeader.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="header__btn.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnHeader.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="header__btn.Text" xml:space="preserve">
+  <data name="btnHeader.Text" xml:space="preserve">
     <value>选择头像</value>
   </data>
-  <data name="&gt;&gt;header__btn.Name" xml:space="preserve">
-    <value>header__btn</value>
+  <data name="&gt;&gt;btnHeader.Name" xml:space="preserve">
+    <value>btnHeader</value>
   </data>
-  <data name="&gt;&gt;header__btn.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnHeader.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;header__btn.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnHeader.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;header__btn.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;btnHeader.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
-  <data name="rpwd_box.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 149</value>
+  <data name="txtboxPwd2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 152</value>
   </data>
-  <data name="rpwd_box.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtboxPwd2.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 21</value>
   </data>
-  <data name="rpwd_box.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtboxPwd2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;rpwd_box.Name" xml:space="preserve">
-    <value>rpwd_box</value>
+  <data name="&gt;&gt;txtboxPwd2.Name" xml:space="preserve">
+    <value>txtboxPwd2</value>
   </data>
-  <data name="&gt;&gt;rpwd_box.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtboxPwd2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;rpwd_box.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtboxPwd2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;rpwd_box.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;txtboxPwd2.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -313,7 +313,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -322,7 +322,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 193</value>
+    <value>205, 196</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 12</value>
@@ -343,7 +343,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -352,7 +352,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 152</value>
+    <value>205, 155</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 12</value>
@@ -373,7 +373,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -382,7 +382,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 260</value>
+    <value>205, 238</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 12</value>
@@ -403,7 +403,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -433,61 +433,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="register_btn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="register_btn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 14pt</value>
-  </data>
-  <data name="register_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 281</value>
-  </data>
-  <data name="register_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 106</value>
-  </data>
-  <data name="register_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;register_btn.Name" xml:space="preserve">
-    <value>register_btn</value>
-  </data>
-  <data name="&gt;&gt;register_btn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;register_btn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;register_btn.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 390</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>点击注册</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>8</value>
   </data>
   <data name="radioButton1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -515,7 +461,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;radioButton1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>7</value>
   </data>
   <data name="radioButton2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -542,7 +488,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;radioButton2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>6</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -574,33 +520,171 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>20</value>
   </data>
-  <data name="name_label.AutoSize" type="System.Boolean, mscorlib">
+  <data name="labelNameTip.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="name_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 94</value>
+  <data name="labelNameTip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 94</value>
   </data>
-  <data name="name_label.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelNameTip.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 12</value>
   </data>
-  <data name="name_label.TabIndex" type="System.Int32, mscorlib">
+  <data name="labelNameTip.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="name_label.Text" xml:space="preserve">
+  <data name="labelNameTip.Text" xml:space="preserve">
     <value>请输入昵称</value>
   </data>
-  <data name="&gt;&gt;name_label.Name" xml:space="preserve">
-    <value>name_label</value>
+  <data name="&gt;&gt;labelNameTip.Name" xml:space="preserve">
+    <value>labelNameTip</value>
   </data>
-  <data name="&gt;&gt;name_label.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelNameTip.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;name_label.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelNameTip.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;name_label.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelNameTip.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelPwd1Tip.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelPwd1Tip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 137</value>
+  </data>
+  <data name="labelPwd1Tip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 12</value>
+  </data>
+  <data name="labelPwd1Tip.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="labelPwd1Tip.Text" xml:space="preserve">
+    <value>请输入密码</value>
+  </data>
+  <data name="&gt;&gt;labelPwd1Tip.Name" xml:space="preserve">
+    <value>labelPwd1Tip</value>
+  </data>
+  <data name="&gt;&gt;labelPwd1Tip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelPwd1Tip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelPwd1Tip.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelPwd2Tip.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelPwd2Tip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 176</value>
+  </data>
+  <data name="labelPwd2Tip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 12</value>
+  </data>
+  <data name="labelPwd2Tip.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="labelPwd2Tip.Text" xml:space="preserve">
+    <value>请再次输入密码</value>
+  </data>
+  <data name="&gt;&gt;labelPwd2Tip.Name" xml:space="preserve">
+    <value>labelPwd2Tip</value>
+  </data>
+  <data name="&gt;&gt;labelPwd2Tip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelPwd2Tip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelPwd2Tip.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelSignTip.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelSignTip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 217</value>
+  </data>
+  <data name="labelSignTip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 12</value>
+  </data>
+  <data name="labelSignTip.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="labelSignTip.Text" xml:space="preserve">
+    <value>请输入个性签名</value>
+  </data>
+  <data name="&gt;&gt;labelSignTip.Name" xml:space="preserve">
+    <value>labelSignTip</value>
+  </data>
+  <data name="&gt;&gt;labelSignTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSignTip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelSignTip.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 256</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 12</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>请选择生日</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnRegister.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnRegister.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 14pt</value>
+  </data>
+  <data name="btnRegister.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnRegister.Location" type="System.Drawing.Point, System.Drawing">
+    <value>289, 281</value>
+  </data>
+  <data name="btnRegister.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 82</value>
+  </data>
+  <data name="btnRegister.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btnRegister.Name" xml:space="preserve">
+    <value>btnRegister</value>
+  </data>
+  <data name="&gt;&gt;btnRegister.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRegister.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnRegister.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -616,7 +700,7 @@
     <value>None</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>642, 461</value>
+    <value>642, 381</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

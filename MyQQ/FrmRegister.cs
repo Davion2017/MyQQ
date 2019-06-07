@@ -22,7 +22,7 @@ namespace MyQQ
 
         private void FrmRegister_Load(object sender, EventArgs e)
         {
-            pwd_box.PasswordChar = '*';
+            txtboxPwd1.PasswordChar = '*';
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -32,58 +32,37 @@ namespace MyQQ
             openFileDialog1.Filter = "bmp文件(*.bmp)|*.bmp|gif文件(*.gif)|*.gif|jpg文件(*.jpg)|*.jpg|ico文件(*.ico)|*.ico";
 
             //获取打开文件返回值
-            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string fullpath = openFileDialog1.FileName;
-                head_Img_box.Image = Image.FromFile(fullpath);
+                imgboxHeader.Image = Image.FromFile(fullpath);
                 MessageBox.Show(fullpath);
             }
             else
             {
                 MessageBox.Show("图片打开失败");
-            }
-
-
-
-            
-
-        }
-
-        private void TextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-            name_label.ForeColor = Color.Transparent;
-            name_label.BackColor = Color.Transparent;
-            if (name_box.TextLength >= 6 )
-            {
-                name_label.Text = "不合法:昵称过长";
-                name_label.ForeColor = Color.Red;
-
-            }
-            else if (name_box.TextLength == 0)
-            {
-                name_label.Text = "不合法:昵称不可为空";
-                name_label.ForeColor = Color.Red;
-            }
-            else
-            {
-                name_label.Text = "合法";
-                name_label.ForeColor = Color.Black;
+               
             }
 
         }
 
         private void Register_btn_Click(object sender, EventArgs e)
         {
-            if (name_label.Text == "合法")
-            {
-                MessageBox.Show("昵称合法");
-            }
-            else
-            {
-                string tip = name_box.Text+"昵称不合法"+"密码:"+pwd_box.Text;
-                MessageBox.Show(tip);
-            }
+
+        }
+
+
+        private void Pwd_box_Enter(object sender, EventArgs e)
+        {
+        }
+
+
+
+        private void FrmRegister_Activated(object sender, EventArgs e)
+        {
+            txtboxName.Focus();
         }
     }
 }
+
+
