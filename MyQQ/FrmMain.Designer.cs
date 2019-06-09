@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.panelTitle = new System.Windows.Forms.Panel();
             this.btnMin = new System.Windows.Forms.Button();
@@ -38,8 +39,15 @@
             this.dgvFriendList = new System.Windows.Forms.DataGridView();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.ctmsFriendList = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.和TA聊天ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.修改备注ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.删除好友ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.picHead)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFriendList)).BeginInit();
+            this.ctmsFriendList.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTitle
@@ -122,6 +130,7 @@
             this.dgvFriendList.RowTemplate.Height = 23;
             this.dgvFriendList.Size = new System.Drawing.Size(255, 476);
             this.dgvFriendList.TabIndex = 6;
+            this.dgvFriendList.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvFriendList_CellMouseUp);
             // 
             // btnAdd
             // 
@@ -143,6 +152,46 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
+            // ctmsFriendList
+            // 
+            this.ctmsFriendList.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.和TA聊天ToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.修改备注ToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.删除好友ToolStripMenuItem});
+            this.ctmsFriendList.Name = "ctmsFriendList";
+            this.ctmsFriendList.Size = new System.Drawing.Size(181, 104);
+            // 
+            // 和TA聊天ToolStripMenuItem
+            // 
+            this.和TA聊天ToolStripMenuItem.Name = "和TA聊天ToolStripMenuItem";
+            this.和TA聊天ToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.和TA聊天ToolStripMenuItem.Text = "和TA聊天";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(124, 6);
+            // 
+            // 修改备注ToolStripMenuItem
+            // 
+            this.修改备注ToolStripMenuItem.Name = "修改备注ToolStripMenuItem";
+            this.修改备注ToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.修改备注ToolStripMenuItem.Text = "修改备注";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(124, 6);
+            // 
+            // 删除好友ToolStripMenuItem
+            // 
+            this.删除好友ToolStripMenuItem.Name = "删除好友ToolStripMenuItem";
+            this.删除好友ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.删除好友ToolStripMenuItem.Text = "删除好友";
+            this.删除好友ToolStripMenuItem.Click += new System.EventHandler(this.删除好友ToolStripMenuItem_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -162,10 +211,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmMain";
+            this.Activated += new System.EventHandler(this.FrmMain_Activated);
             this.Load += new System.EventHandler(this.FrmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picHead)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFriendList)).EndInit();
+            this.ctmsFriendList.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,5 +232,11 @@
         private System.Windows.Forms.DataGridView dgvFriendList;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.ContextMenuStrip ctmsFriendList;
+        private System.Windows.Forms.ToolStripMenuItem 和TA聊天ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 修改备注ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem 删除好友ToolStripMenuItem;
     }
 }

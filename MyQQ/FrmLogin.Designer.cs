@@ -175,10 +175,11 @@
             this.Controls.Add(this.panel_title);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "MyQQ";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.panel_title.ResumeLayout(false);
             this.panel_title.PerformLayout();

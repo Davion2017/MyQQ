@@ -72,6 +72,7 @@ namespace MyQQ
         {
             UserInfo_Init();
             FriendList_Init();
+            this.dgvFriendList.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void UserInfo_Init()
@@ -86,7 +87,7 @@ namespace MyQQ
 
         private void FriendList_Init()
         {
-            string sql = "select name as '昵称', account as '账号' from users where account=(select friend from friendsList where myAccount='" + this.account + "');";
+            string sql = "select name as '昵称', account as '账号' from users where account in (select friend from friendsList where myAccount='" + this.account + "');";
             SqlDataReader sqlData = DBHelper.GetDataReader(sql);
             DataTable DT = new DataTable();
             DT.Load(sqlData);
@@ -102,6 +103,67 @@ namespace MyQQ
         {
             FrmAdd frmAdd = new FrmAdd(this.account);
             frmAdd.Show();
+            FriendList_Init();
+        }
+
+        private void CheckResquests()
+        {
+            string sql = "SELECT name, account from users where account=(select DISTINCT From_account from ConfirmationRequest where To_account='" + this.account + "');";
+            SqlDataReader sqlData = DBHelper.GetDataReader(sql);
+            try
+            {
+                if (sqlData.HasRows)
+                {
+                    while (sqlData.Read())
+                    {
+                        string tips = sqlData["name"].ToString() + "请求加你为好友，是否同意？";
+                        DialogResult result = MessageBox.Show(tips, "提醒", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            sql = "insert into friendsList(myAccount, friend) values('" + this.account + "', '" + sqlData["account"] + "');";
+                            DBHelper.GetExcuteNonQuery(sql);
+                            sql = "insert into friendsList(myAccount, friend) values('" + sqlData["account"] + "', '" + this.account + "');";
+                            DBHelper.GetExcuteNonQuery(sql);
+                        }
+                    }
+                }
+            }
+            catch { }
+            finally
+            {
+                sql = "DELETE FROM ConfirmationRequest WHERE To_account='" + this.account + "';";
+                DBHelper.GetExcuteNonQuery(sql);
+            }
+        }
+
+        private void FrmMain_Activated(object sender, EventArgs e)
+        {
+            CheckResquests();
+            FriendList_Init();
+        }
+
+        private void DgvFriendList_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Right)
+            {
+                dgvFriendList.ClearSelection();
+                dgvFriendList.Rows[e.RowIndex].Selected = true;
+                dgvFriendList.CurrentCell = dgvFriendList.Rows[e.RowIndex].Cells[e.ColumnIndex];
+                ctmsFriendList.Show(MousePosition.X, MousePosition.Y);
+            }
+        }
+
+        private void 删除好友ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string num = dgvFriendList.CurrentRow.Cells["账号"].Value.ToString();
+            DialogResult result = MessageBox.Show("是否删除该好友？", "警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if(result == DialogResult.OK)
+            {
+                string sql = "delete from friendsList where myAccount='" + this.account + "' and friend='" + num + "';";
+                DBHelper.GetExcuteNonQuery(sql);
+                sql = "delete from friendsList where myAccount='" + num + "' and friend='" + this.account + "';";
+                DBHelper.GetExcuteNonQuery(sql);
+            }
             FriendList_Init();
         }
     }

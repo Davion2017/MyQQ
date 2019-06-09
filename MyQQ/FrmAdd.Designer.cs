@@ -94,7 +94,7 @@
             this.dgvAccountList.RowTemplate.Height = 23;
             this.dgvAccountList.Size = new System.Drawing.Size(427, 298);
             this.dgvAccountList.TabIndex = 5;
-            this.dgvAccountList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvAccountList_CellClick);
+            this.dgvAccountList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvAccountList_CellDoubleClick);
             // 
             // FrmAdd
             // 
