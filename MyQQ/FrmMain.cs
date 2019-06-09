@@ -72,6 +72,7 @@ namespace MyQQ
         {
             UserInfo_Init();
             FriendList_Init();
+            this.dgvFriendList.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void UserInfo_Init()
@@ -138,6 +139,31 @@ namespace MyQQ
         private void FrmMain_Activated(object sender, EventArgs e)
         {
             CheckResquests();
+            FriendList_Init();
+        }
+
+        private void DgvFriendList_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Right)
+            {
+                dgvFriendList.ClearSelection();
+                dgvFriendList.Rows[e.RowIndex].Selected = true;
+                dgvFriendList.CurrentCell = dgvFriendList.Rows[e.RowIndex].Cells[e.ColumnIndex];
+                ctmsFriendList.Show(MousePosition.X, MousePosition.Y);
+            }
+        }
+
+        private void 删除好友ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string num = dgvFriendList.CurrentRow.Cells["账号"].Value.ToString();
+            DialogResult result = MessageBox.Show("是否删除该好友？", "警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if(result == DialogResult.OK)
+            {
+                string sql = "delete from friendsList where myAccount='" + this.account + "' and friend='" + num + "';";
+                DBHelper.GetExcuteNonQuery(sql);
+                sql = "delete from friendsList where myAccount='" + num + "' and friend='" + this.account + "';";
+                DBHelper.GetExcuteNonQuery(sql);
+            }
             FriendList_Init();
         }
     }
