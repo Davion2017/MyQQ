@@ -126,7 +126,7 @@
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtboxPwd1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;txtboxPwd1.Name" xml:space="preserve">
     <value>txtboxPwd1</value>
@@ -147,7 +147,10 @@
     <value>135, 21</value>
   </data>
   <data name="txtboxSign.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>4</value>
+  </data>
+  <data name="txtboxSign.Text" xml:space="preserve">
+    <value>没啥好说的.</value>
   </data>
   <data name="&gt;&gt;txtboxSign.Name" xml:space="preserve">
     <value>txtboxSign</value>
@@ -171,7 +174,7 @@
     <value>86, 21</value>
   </data>
   <data name="txtboxName.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;txtboxName.Name" xml:space="preserve">
     <value>txtboxName</value>
@@ -192,7 +195,7 @@
     <value>135, 21</value>
   </data>
   <data name="dtpBirth.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;dtpBirth.Name" xml:space="preserve">
     <value>dtpBirth</value>
@@ -271,7 +274,7 @@
     <value>135, 21</value>
   </data>
   <data name="txtboxPwd2.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;txtboxPwd2.Name" xml:space="preserve">
     <value>txtboxPwd2</value>
@@ -435,59 +438,59 @@
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="radioButton1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="rbtnMale.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="rbtnMale.Location" type="System.Drawing.Point, System.Drawing">
     <value>376, 68</value>
   </data>
-  <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="rbtnMale.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 16</value>
   </data>
-  <data name="radioButton1.TabIndex" type="System.Int32, mscorlib">
+  <data name="rbtnMale.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="radioButton1.Text" xml:space="preserve">
+  <data name="rbtnMale.Text" xml:space="preserve">
     <value>男
 </value>
   </data>
-  <data name="&gt;&gt;radioButton1.Name" xml:space="preserve">
-    <value>radioButton1</value>
+  <data name="&gt;&gt;rbtnMale.Name" xml:space="preserve">
+    <value>rbtnMale</value>
   </data>
-  <data name="&gt;&gt;radioButton1.Type" xml:space="preserve">
+  <data name="&gt;&gt;rbtnMale.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;radioButton1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;rbtnMale.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;radioButton1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;rbtnMale.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="radioButton2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="rbtnFemale.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="rbtnFemale.Location" type="System.Drawing.Point, System.Drawing">
     <value>376, 90</value>
   </data>
-  <data name="radioButton2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="rbtnFemale.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 16</value>
   </data>
-  <data name="radioButton2.TabIndex" type="System.Int32, mscorlib">
+  <data name="rbtnFemale.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="radioButton2.Text" xml:space="preserve">
+  <data name="rbtnFemale.Text" xml:space="preserve">
     <value>女</value>
   </data>
-  <data name="&gt;&gt;radioButton2.Name" xml:space="preserve">
-    <value>radioButton2</value>
+  <data name="&gt;&gt;rbtnFemale.Name" xml:space="preserve">
+    <value>rbtnFemale</value>
   </data>
-  <data name="&gt;&gt;radioButton2.Type" xml:space="preserve">
+  <data name="&gt;&gt;rbtnFemale.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;radioButton2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;rbtnFemale.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;radioButton2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;rbtnFemale.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
@@ -556,13 +559,13 @@
     <value>276, 137</value>
   </data>
   <data name="labelPwd1Tip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 12</value>
+    <value>71, 12</value>
   </data>
   <data name="labelPwd1Tip.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
   <data name="labelPwd1Tip.Text" xml:space="preserve">
-    <value>请输入密码</value>
+    <value>请输入密码!</value>
   </data>
   <data name="&gt;&gt;labelPwd1Tip.Name" xml:space="preserve">
     <value>labelPwd1Tip</value>
@@ -583,13 +586,13 @@
     <value>276, 176</value>
   </data>
   <data name="labelPwd2Tip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 12</value>
+    <value>95, 12</value>
   </data>
   <data name="labelPwd2Tip.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
   <data name="labelPwd2Tip.Text" xml:space="preserve">
-    <value>请再次输入密码</value>
+    <value>请再次输入密码!</value>
   </data>
   <data name="&gt;&gt;labelPwd2Tip.Name" xml:space="preserve">
     <value>labelPwd2Tip</value>
@@ -610,13 +613,13 @@
     <value>276, 217</value>
   </data>
   <data name="labelSignTip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 12</value>
+    <value>173, 12</value>
   </data>
   <data name="labelSignTip.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
   <data name="labelSignTip.Text" xml:space="preserve">
-    <value>请输入个性签名</value>
+    <value>请输入个性签名!可以选择默认!</value>
   </data>
   <data name="&gt;&gt;labelSignTip.Name" xml:space="preserve">
     <value>labelSignTip</value>
@@ -630,31 +633,31 @@
   <data name="&gt;&gt;labelSignTip.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+  <data name="labelBirthTip.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="labelBirthTip.Location" type="System.Drawing.Point, System.Drawing">
     <value>276, 256</value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 12</value>
+  <data name="labelBirthTip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 12</value>
   </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+  <data name="labelBirthTip.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>请选择生日</value>
+  <data name="labelBirthTip.Text" xml:space="preserve">
+    <value>请选择生日!</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="&gt;&gt;labelBirthTip.Name" xml:space="preserve">
+    <value>labelBirthTip</value>
   </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelBirthTip.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelBirthTip.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelBirthTip.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="btnRegister.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">

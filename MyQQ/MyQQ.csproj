@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="IrisSkin4">
-      <HintPath>E:\迅雷下载\IrisSkin4.dll\IrisSkin4.dll</HintPath>
+      <HintPath>..\..\..\File\IrisSkin4.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
