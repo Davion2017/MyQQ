@@ -82,7 +82,8 @@ namespace MyQQ
             sqlData.Read();
             this.labUserName.Text = sqlData["name"].ToString();
             this.labSignature.Text = sqlData["signature"].ToString();
-            this.picHead.Image = Image.FromFile("../../../img/beautify_face.png");
+            this.picHead.BackgroundImage = Image.FromFile(Application.StartupPath.Replace("MyQQ\\bin\\Debug", "") + sqlData["icon"]);
+            this.picHead.BackgroundImageLayout = ImageLayout.Zoom;
         }
 
         private void FriendList_Init()
@@ -153,6 +154,12 @@ namespace MyQQ
             }
         }
 
+        private void Chat()
+        {
+            FrmChat frmChat = new FrmChat(this.account, dgvFriendList.CurrentRow.Cells["账号"].Value.ToString());
+            frmChat.Show();
+        }
+
         private void 删除好友ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string num = dgvFriendList.CurrentRow.Cells["账号"].Value.ToString();
@@ -165,6 +172,39 @@ namespace MyQQ
                 DBHelper.GetExcuteNonQuery(sql);
             }
             FriendList_Init();
+        }
+
+        private void 和TA聊天ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Chat();
+        }
+
+        private void Timer_CheckMsg_Tick(object sender, EventArgs e)
+        {
+            FrmChat[] frmChats = new FrmChat[100];
+            int i = 0;
+            string sql = "select DISTINCT send_From from msg where send_To='" + this.account + "' and state='1';";
+            SqlDataReader sqlData = DBHelper.GetDataReader(sql);
+            sql = "UPDATE msg SET state='0' WHERE send_To='" + this.account + "';";
+            DBHelper.GetExcuteNonQuery(sql);
+            if (sqlData.HasRows)
+            {
+                try
+                {
+                    while(sqlData.Read())
+                    {
+                        string tips = sqlData["send_From"].ToString() + "发来消息，是否查看？";
+                        DialogResult result = MessageBox.Show(tips, "提醒", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                        if(result == DialogResult.Yes)
+                        {
+                            frmChats[i] = new FrmChat(this.account, sqlData["send_From"].ToString());
+                            frmChats[i].Show();
+                            i++;
+                        }
+                    }
+                }
+                catch { }
+            }
         }
     }
 }

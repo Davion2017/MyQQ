@@ -126,8 +126,9 @@
             // 
             this.picHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.picHead.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picHead.BackgroundImage")));
-            this.picHead.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picHead.Location = new System.Drawing.Point(25, 174);
+            this.picHead.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picHead.Cursor = System.Windows.Forms.Cursors.Default;
+            this.picHead.Location = new System.Drawing.Point(27, 174);
             this.picHead.Name = "picHead";
             this.picHead.Size = new System.Drawing.Size(100, 90);
             this.picHead.TabIndex = 7;

@@ -99,7 +99,7 @@ namespace MyQQ
 
         private void CbxAccount_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string sql = "select account, passwd, isRemember from users where account='" + cbxAccount.Text + "'order by last_login desc;";
+            string sql = "select account, passwd, isRemember, icon from users where account='" + cbxAccount.Text + "'order by last_login desc;";
             SqlDataReader sqlData = DBHelper.GetDataReader(sql);
             try
             {
@@ -113,6 +113,11 @@ namespace MyQQ
                 {
                     txtPassword.Clear();
                     checkRemember.Checked = false;
+                }
+                if(sqlData["icon"] != null)
+                {
+                    string imgPath = Application.StartupPath.Replace("MyQQ\\bin\\Debug", "") + sqlData["icon"];
+                    picHead.BackgroundImage = Image.FromFile(imgPath);
                 }
             }
             catch { }

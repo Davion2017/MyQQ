@@ -45,6 +45,7 @@
             this.修改备注ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.删除好友ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer_CheckMsg = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picHead)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFriendList)).BeginInit();
             this.ctmsFriendList.SuspendLayout();
@@ -90,9 +91,9 @@
             // 
             // picHead
             // 
-            this.picHead.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picHead.BackgroundImage")));
+            this.picHead.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.picHead.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picHead.Location = new System.Drawing.Point(10, 44);
+            this.picHead.Location = new System.Drawing.Point(12, 44);
             this.picHead.Name = "picHead";
             this.picHead.Size = new System.Drawing.Size(60, 60);
             this.picHead.TabIndex = 3;
@@ -161,13 +162,14 @@
             this.toolStripMenuItem2,
             this.删除好友ToolStripMenuItem});
             this.ctmsFriendList.Name = "ctmsFriendList";
-            this.ctmsFriendList.Size = new System.Drawing.Size(181, 104);
+            this.ctmsFriendList.Size = new System.Drawing.Size(128, 82);
             // 
             // 和TA聊天ToolStripMenuItem
             // 
             this.和TA聊天ToolStripMenuItem.Name = "和TA聊天ToolStripMenuItem";
             this.和TA聊天ToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.和TA聊天ToolStripMenuItem.Text = "和TA聊天";
+            this.和TA聊天ToolStripMenuItem.Click += new System.EventHandler(this.和TA聊天ToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -188,9 +190,14 @@
             // 删除好友ToolStripMenuItem
             // 
             this.删除好友ToolStripMenuItem.Name = "删除好友ToolStripMenuItem";
-            this.删除好友ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.删除好友ToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.删除好友ToolStripMenuItem.Text = "删除好友";
             this.删除好友ToolStripMenuItem.Click += new System.EventHandler(this.删除好友ToolStripMenuItem_Click);
+            // 
+            // timer_CheckMsg
+            // 
+            this.timer_CheckMsg.Enabled = true;
+            this.timer_CheckMsg.Tick += new System.EventHandler(this.Timer_CheckMsg_Tick);
             // 
             // FrmMain
             // 
@@ -238,5 +245,6 @@
         private System.Windows.Forms.ToolStripMenuItem 修改备注ToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem 删除好友ToolStripMenuItem;
+        private System.Windows.Forms.Timer timer_CheckMsg;
     }
 }
