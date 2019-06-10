@@ -181,8 +181,6 @@ namespace MyQQ
 
         private void Timer_CheckMsg_Tick(object sender, EventArgs e)
         {
-            FrmChat[] frmChats = new FrmChat[100];
-            int i = 0;
             string sql = "select DISTINCT send_From from msg where send_To='" + this.account + "' and state='1';";
             SqlDataReader sqlData = DBHelper.GetDataReader(sql);
             sql = "UPDATE msg SET state='0' WHERE send_To='" + this.account + "';";
@@ -197,9 +195,8 @@ namespace MyQQ
                         DialogResult result = MessageBox.Show(tips, "提醒", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                         if(result == DialogResult.Yes)
                         {
-                            frmChats[i] = new FrmChat(this.account, sqlData["send_From"].ToString());
-                            frmChats[i].Show();
-                            i++;
+                            FrmChat frmChat = new FrmChat(this.account, sqlData["send_From"].ToString());
+                            frmChat.Show();
                         }
                     }
                 }

@@ -37,6 +37,7 @@
             // 
             // rtxtMsgShow
             // 
+            this.rtxtMsgShow.Font = new System.Drawing.Font("宋体", 16F);
             this.rtxtMsgShow.Location = new System.Drawing.Point(13, 46);
             this.rtxtMsgShow.Name = "rtxtMsgShow";
             this.rtxtMsgShow.Size = new System.Drawing.Size(676, 243);
@@ -45,6 +46,7 @@
             // 
             // rtxtMsgEdite
             // 
+            this.rtxtMsgEdite.Font = new System.Drawing.Font("黑体", 16F);
             this.rtxtMsgEdite.Location = new System.Drawing.Point(12, 310);
             this.rtxtMsgEdite.Name = "rtxtMsgEdite";
             this.rtxtMsgEdite.Size = new System.Drawing.Size(677, 96);

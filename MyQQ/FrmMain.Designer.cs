@@ -162,35 +162,35 @@
             this.toolStripMenuItem2,
             this.删除好友ToolStripMenuItem});
             this.ctmsFriendList.Name = "ctmsFriendList";
-            this.ctmsFriendList.Size = new System.Drawing.Size(128, 82);
+            this.ctmsFriendList.Size = new System.Drawing.Size(181, 104);
             // 
             // 和TA聊天ToolStripMenuItem
             // 
             this.和TA聊天ToolStripMenuItem.Name = "和TA聊天ToolStripMenuItem";
-            this.和TA聊天ToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.和TA聊天ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.和TA聊天ToolStripMenuItem.Text = "和TA聊天";
             this.和TA聊天ToolStripMenuItem.Click += new System.EventHandler(this.和TA聊天ToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(124, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
             // 修改备注ToolStripMenuItem
             // 
             this.修改备注ToolStripMenuItem.Name = "修改备注ToolStripMenuItem";
-            this.修改备注ToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.修改备注ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.修改备注ToolStripMenuItem.Text = "修改备注";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(124, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
             // 
             // 删除好友ToolStripMenuItem
             // 
             this.删除好友ToolStripMenuItem.Name = "删除好友ToolStripMenuItem";
-            this.删除好友ToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.删除好友ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.删除好友ToolStripMenuItem.Text = "删除好友";
             this.删除好友ToolStripMenuItem.Click += new System.EventHandler(this.删除好友ToolStripMenuItem_Click);
             // 
