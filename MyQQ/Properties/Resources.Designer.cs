@@ -63,6 +63,16 @@ namespace MyQQ.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap BgpChangeData {
+            get {
+                object obj = ResourceManager.GetObject("BgpChangeData", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap QQ标志 {
             get {
                 object obj = ResourceManager.GetObject("QQ标志", resourceCulture);

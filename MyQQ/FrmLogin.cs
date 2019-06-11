@@ -126,7 +126,7 @@ namespace MyQQ
         private void BtnRegister_Click(object sender, EventArgs e)
         {
             FrmRegister frm_reg = new FrmRegister();
-            frm_reg.Show();
+            frm_reg.ShowDialog();
             
         }
     }

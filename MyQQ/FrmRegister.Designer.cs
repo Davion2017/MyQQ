@@ -233,7 +233,6 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "FrmRegister";
             this.Activated += new System.EventHandler(this.FrmRegister_Activated);
             this.Load += new System.EventHandler(this.FrmRegister_Load);

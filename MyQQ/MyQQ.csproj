@@ -68,6 +68,12 @@
     <Compile Include="FrmChat.Designer.cs">
       <DependentUpon>FrmChat.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmChangeData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChangeData.Designer.cs">
+      <DependentUpon>FrmChangeData.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmChat.resx">
       <DependentUpon>FrmChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChangeData.resx">
+      <DependentUpon>FrmChangeData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -139,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\注册背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BgpChangeData.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
