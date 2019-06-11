@@ -95,7 +95,8 @@ namespace MyQQ
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
-
+            FrmChangeData frmChangeData = new FrmChangeData(this.account);
+            frmChangeData.ShowDialog();
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
